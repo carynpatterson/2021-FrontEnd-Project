@@ -1,0 +1,64 @@
+/* ================================= 
+  Base Styles
+==================================== */
+* {
+    box-sizing: border-box;
+    
+  }
+
+  html {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+  }
+
+body {
+    color: white;
+    font-family: "Sigmar One", cursive;
+    background-color: firebrick;
+    letter-spacing: .2em;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+    margin: auto;
+    font-size: 1.5em;
+    background: white;
+    color: black;
+}
+
+.banner {
+  background: white;
+  display: inline-block;
+  position: sticky;
+    
+}
+
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+   }
+
+     
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    .container {
+      width: 70%;
+      max-width: 1000px;
+        margin: 0 auto;
+      }
+    }
+
+@media (min-width: 640px) {
+
+
+}
