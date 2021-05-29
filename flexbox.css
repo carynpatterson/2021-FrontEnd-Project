@@ -1,0 +1,24 @@
+/* ================================= 
+  Flexbox Styles
+==================================== */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.player {
+  flex: 1;
+  
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+}
