@@ -16,11 +16,12 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-   }
+   
+}
 
 .player {
- flex: 1;
- white-space: nowrap;
+ flex: 0 1 auto;
+ align-self: stretch;
 }
 
 /* ================================= 
@@ -29,6 +30,14 @@ footer {
 @media (min-width: 769px) {
   .container {
     flex-direction: row;
+    
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    flex-direction: row;
+    flex-flow: row; /*removes from wrap so all items will be on one line at largest size*/
     
   }
 }

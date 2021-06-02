@@ -3,7 +3,7 @@
 ==================================== */
 * {
   box-sizing: border-box;
-  letter-spacing: .15rem;
+  letter-spacing: .15rem; /*made font more legible*/
   font-family: "Sigmar One", cursive;
 }
 
@@ -24,7 +24,7 @@ header {
     
 }
 
-h1, h2, .player, footer {
+h1, label, .player, footer /*adds black outline to text making it more visible*/ {
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
@@ -39,35 +39,54 @@ a {
   color: lightgreen;
   text-decoration: none;
 }
+
+textarea /*styles the textarea where players add names*/ {
+  color:black;
+  background-color: whitesmoke;
+  border: solid black;
+  border-radius: 1.5em;
+  font-size: 1.25em;
+  max-height: 2.25em;
+  max-width: 12em;
+  text-align: center;
   
-.container, h2 {
-    color: whitesmoke;
-    background-color: firebrick;
-    height: 100%;
-    width: 100%;
-    padding-left: 5%;
-	  padding-right: 5%;
 }
 
-.container {
-	background: firebrick;
-  border-radius: 1.5em;
- }
+label /*styles player name & number of player headers*/{
+    color: whitesmoke;
+    background-color: darkred;
+}
 
-.player {
+#player_count /*styles the dropdown box*/ {
+  color:black;
+  background-color: whitesmoke;
+}
+
+.player_count /*styles the header "Number of Players"*/{
+  margin: 1em;
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+.container /*CSS style for flexbox container*/ {
+	background: black;
+  border-radius: 1.5em;
+}
+
+.player /*styles round number text*/{
 	color: whitesmoke;
 	padding: 1em;
 	margin: 1em;	
 	background: darkred;
 	border-radius: 1.5em;
   border: black solid .25em;
-}
+} 
 
 .pudding {
   color: pink;
 }
 
-.final {
+.final /*CSS style for final score line*/ {
   color: lightgreen;
 }
      
