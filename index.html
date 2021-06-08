@@ -16,82 +16,101 @@
         <h1>Sushi Go! Score Tracker</h1> 
     </header>
 
-        <div class="player_count">
+        <div class="choose_player_count">
         <label for="player_count">Number of players:</label>
         <select id="player_count" name="number_of_players">
-            <option value="one">One</option>
             <option value="two">Two</option>
             <option value="three">Three</option>
             <option value="four">Four</option>
             <option value="five">Five</option>
         </select>  
         </div>
-        
-        <div class="container">
+
+        <div class="container"> 
             <form>
                 <div class="Player-1 player">
-                <label for="player_name">Player Name:</label>
-                <textarea id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;"></textarea>
-            </form>
-                <ol style="list-style-type:none;">
-                    <li>Round 1</li>
-                    <li>Round 2</li>
-                    <li>Round 3</li>
-                    <li>Round 4</li>
-                    <li class="pudding">Pudding</li>
-                    <li class="final">Final Score</li>
-                </ol>
+                <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 1">
+                        </form>
+                <ul style="list-style-type:none;">
+                    <label class="score">Score:</label>
+                    <li><input type="number" id="round1Player1Score" name="round1Player1Score" placeholder="Round 1"></li>
+                    <li><input type="number" id="round2Player1Score" name="round2Player1Score" placeholder="Round 2"></li>
+                    <li><input type="number" id="round3Player1Score" name="round3Player1Score" placeholder="Round 3"></li>
+                    <li><label class="pudding">Pudding:</label> <br>
+                        <input type="radio" id="mostpudding" name="puddingscore" value="mostpudding">
+                        <label class="pudding">Most</label> <br>
+                        <input type="radio" id="leastpudding" name="puddingscore" value="leastpudding">
+                        <label class="pudding">Least</label>
+                    </li>
+                    <li><input type="number" id="finalPlayer1Score" name="finalPlayer1Score" placeholder="Total"></li>
+                </ul>
             </div>
             <div class="Player-2 player">
-                <label for="player_name">Player Name:</label>
-                <textarea id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;"></textarea>
+                <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 2">
             </form>
                 <ol style="list-style-type:none;">
-                    <li>Round 1</li>
-                    <li>Round 2</li>
-                    <li>Round 3</li>
-                    <li>Round 4</li>
-                    <li class="pudding">Pudding</li>
-                    <li class="final">Final Score</li>
+                    <label class="score">Score:</label>
+                    <li><input type="number" id="round1Player2Score" name="round1Player2Score" placeholder="Round 1"></li>
+                    <li><input type="number" id="round2Player2Score" name="round2Player2Score" placeholder="Round 2"></li>
+                    <li><input type="number" id="round3Player2Score" name="round3Player2Score" placeholder="Round 3"></li>
+                    <li><label class="pudding">Pudding:</label> <br>
+                        <input type="radio" id="mostpudding" name="puddingscore" value="mostpudding">
+                        <label class="pudding">Most</label> <br>
+                        <input type="radio" id="leastpudding" name="puddingscore" value="leastpudding">
+                        <label class="pudding">Least</label>
+                    </li>
+                    <li><input type="number" id="finalPlayer2Score" name="finalPlayer2Score" placeholder="Total"></li>
                 </ol>
             </div>
             <div class="Player-3 player">
-                <label for="player_name">Player Name:</label>
-                <textarea id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;"></textarea>
+                <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 3">
             </form>
                 <ol style="list-style-type:none;">
-                    <li>Round 1</li>
-                    <li>Round 2</li>
-                    <li>Round 3</li>
-                    <li>Round 4</li>
-                    <li class="pudding">Pudding</li>
-                    <li class="final">Final Score</li>
+                    <label class="score">Score:</label>
+                    <li><input type="number" id="round1Player3Score" name="round1Player3Score" placeholder="Round 1"></li>
+                    <li><input type="number" id="round2Player3Score" name="round2Player3Score" placeholder="Round 2"></li>
+                    <li><input type="number" id="round3Player3Score" name="round3Player3Score" placeholder="Round 3"></li>
+                    <li><label class="pudding">Pudding:</label> <br>
+                        <input type="radio" id="mostpudding" name="puddingscore" value="mostpudding">
+                        <label class="pudding">Most</label> <br>
+                        <input type="radio" id="leastpudding" name="puddingscore" value="leastpudding">
+                        <label class="pudding">Least</label>
+                    </li>
+                    <li><input type="number" id="finalPlayer3Score" name="finalPlayer3Score" placeholder="Total"></li>
                 </ol>
             </div>
             <div class="Player-4 player">
-                <label for="player_name">Player Name:</label>
-                <textarea id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;"></textarea>
+                <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 4">
             </form>
                 <ol style="list-style-type:none;">
-                    <li>Round 1</li>
-                    <li>Round 2</li>
-                    <li>Round 3</li>
-                    <li>Round 4</li>
-                    <li class="pudding">Pudding</li>
-                    <li class="final">Final Score</li>
+                    <label class="score">Score:</label>
+                    <li><input type="number" id="round1Player4Score" name="round1Player4Score" placeholder="Round 1"></li>
+                    <li><input type="number" id="round2Player4Score" name="round2Player4Score" placeholder="Round 2"></li>
+                    <li><input type="number" id="round3Player4Score" name="round3Player4Score" placeholder="Round 3"></li>
+                    <li><label class="pudding">Pudding:</label> <br>
+                        <input type="radio" id="mostpudding" name="puddingscore" value="mostpudding">
+                        <label class="pudding">Most</label> <br>
+                        <input type="radio" id="leastpudding" name="puddingscore" value="leastpudding">
+                        <label class="pudding">Least</label>
+                    </li>
+                    <li><input type="number" id="finalPlayer4Score" name="finalPlayer4Score" placeholder="Total"></li>
                 </ol>
             </div>
             <div class="Player-5 player">
-                <label for="player_name">Player Name:</label>
-                <textarea id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;"></textarea>
+                <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 5">
             </form>
                 <ol style="list-style-type:none;">
-                    <li>Round 1</li>
-                    <li>Round 2</li>
-                    <li>Round 3</li>
-                    <li>Round 4</li>
-                    <li class="pudding">Pudding</li>
-                    <li class="final">Final Score</li>
+                    <label class="score">Score:</label> 
+                    <li><input type="number" id="round1Player5Score" name="round1Player5Score" placeholder="Round 1"></li>
+                    <li><input type="number" id="round2Player5Score" name="round2Player5Score" placeholder="Round 2"></li>
+                    <li><input type="number" id="round3Player5Score" name="round3Player5Score" placeholder="Round 3"></li>
+                    <li><label class="pudding">Pudding:</label> <br>
+                        <input type="radio" id="mostpudding" name="puddingscore" value="mostpudding">
+                        <label class="pudding">Most</label> <br>
+                        <input type="radio" id="leastpudding" name="puddingscore" value="leastpudding">
+                        <label class="pudding">Least</label>
+                    </li>
+                    <li><input type="number" id="finalPlayer5Score" name="finalPlayer5Score" placeholder="Total"></li>
                 </ol>
             </div>
         </div>
@@ -99,6 +118,7 @@
     <footer>
         <p>Find out more information about Sushi Go! <a href=https://boardgamegeek.com/boardgame/133473/sushi-go target=_blank>here!</a></p>
     </footer>
-
+    
+    <script src="scoretracker.js"></script>
 </body>
 </html>

@@ -5,11 +5,11 @@
   box-sizing: border-box;
   letter-spacing: .15rem; /*made font more legible*/
   font-family: "Sigmar One", cursive;
-}
+ }
 
 body {
   background-color: firebrick;
- 
+  
 }  
 
 header {
@@ -18,6 +18,7 @@ header {
     background: darkred;
     border: .75rem solid black;
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     color: whitesmoke;
@@ -36,25 +37,24 @@ footer {
 }
 
 a {
-  color: lightgreen;
   text-decoration: none;
 }
 
-textarea /*styles the textarea where players add names*/ {
+input /*styles the input fields to make them round and smaller*/ {
   color:black;
   background-color: whitesmoke;
   border: solid black;
   border-radius: 1.5em;
   font-size: 1.25em;
   max-height: 2.25em;
-  max-width: 12em;
+  max-width: 9em;
   text-align: center;
   
 }
 
-label /*styles player name & number of player headers*/{
+label /*styles number of players*/{
     color: whitesmoke;
-    background-color: darkred;
+    
 }
 
 #player_count /*styles the dropdown box*/ {
@@ -62,10 +62,11 @@ label /*styles player name & number of player headers*/{
   background-color: whitesmoke;
 }
 
-.player_count /*styles the header "Number of Players"*/{
-  margin: 1em;
+.choose_player_count /*styles the header "Number of Players"*/{
   padding: 1em;
   font-size: 1.5rem;
+  text-align: center;
+  background-color: firebrick;
 }
 
 .container /*CSS style for flexbox container*/ {
@@ -73,7 +74,7 @@ label /*styles player name & number of player headers*/{
   border-radius: 1.5em;
 }
 
-.player /*styles round number text*/{
+.player /*styles "rounds" text inside flex item*/{
 	color: whitesmoke;
 	padding: 1em;
 	margin: 1em;	
@@ -84,9 +85,14 @@ label /*styles player name & number of player headers*/{
 
 .pudding {
   color: pink;
+  
 }
 
-.final /*CSS style for final score line*/ {
+.score {
+  color: lightgreen;
+}
+
+.final, a /*CSS style for final score & link*/ {
   color: lightgreen;
 }
      
