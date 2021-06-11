@@ -8,36 +8,27 @@
  }
 
 body {
-  background-color: firebrick;
-  
+  background-color: firebrick;  
 }  
 
 header {
-    text-align: center;
-    font-size: 2rem;
-    background: darkred;
-    border: .75rem solid black;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    color: whitesmoke;
-    
+  text-align: center;
+  font-size: 2em;
+  background: darkred;
+  border: .5rem solid black;
+  border-radius: 1.5em;
+  width: 85%;
+  padding: 0;
+  margin: auto;
+  color: whitesmoke;   
 }
 
 h1, label, .player, footer /*adds black outline to text making it more visible*/ {
-  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  text-shadow: -.1rem 0 black, 0 .1rem black, .1rem 0 black, 0 -.1rem black;
 }
 
-footer {
-  color: whitesmoke;
-  position: relative;
+h1 {
   text-align: center;
-  font-size: .8rem;
-}
-
-a {
-  text-decoration: none;
 }
 
 input /*styles the input fields to make them round and smaller*/ {
@@ -48,13 +39,11 @@ input /*styles the input fields to make them round and smaller*/ {
   font-size: 1.25em;
   max-height: 2.25em;
   max-width: 9em;
-  text-align: center;
-  
+  text-align: center;  
 }
 
 label /*styles number of players*/{
-    color: whitesmoke;
-    
+  color: whitesmoke;    
 }
 
 #player_count /*styles the dropdown box*/ {
@@ -84,8 +73,7 @@ label /*styles number of players*/{
 } 
 
 .pudding {
-  color: pink;
-  
+  color: pink; 
 }
 
 .score {
@@ -95,8 +83,41 @@ label /*styles number of players*/{
 .final, a /*CSS style for final score & link*/ {
   color: lightgreen;
 }
-     
+
+footer {
+  color: whitesmoke;
+  position: relative;
+  text-align: center;
+  font-size: .8rem;
+  margin-top: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================= 
+  Flexbox Styles
+==================================== */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.player {
+flex-grow: 1;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
 
+@media screen and (min-width: 769px) {
+  .container {
+    flex-flow: row wrap;
+  }
+}
