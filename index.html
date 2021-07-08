@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
+
 <body>
     <header>
         <h1>Sushi Go! Score Tracker</h1> 
@@ -23,6 +24,7 @@
             <option value="four">Four</option>
             <option value="five">Five</option>
         </select>  
+        <button>Submit</button>
         </div>
 
         <div class="container"> 
@@ -35,13 +37,9 @@
                         <li><input type="number" id="round1Player1Score" name="round1Player1Score" placeholder="Round 1"></li>
                         <li><input type="number" id="round2Player1Score" name="round2Player1Score" placeholder="Round 2"></li>
                         <li><input type="number" id="round3Player1Score" name="round3Player1Score" placeholder="Round 3"></li>
-                        <li><label class="pudding">Pudding:</label> <br>
-                            <input type="radio" id="mostpudding" name="puddingscore" value="mostpudding">
-                            <label class="pudding">Most</label> <br>
-                            <input type="radio" id="leastpudding" name="puddingscore" value="leastpudding">
-                            <label class="pudding">Least</label>
-                        </li>
+                        <li><input type="number" id="puddingP1Score" name="puddingP1score" placeholder="Pudding"></li>
                         <li><input type="number" id="finalPlayer1Score" name="finalPlayer1Score" placeholder="Total"></li>
+                        <button>Calculate</button>
                     </ol>
                 </div>
 
@@ -53,13 +51,9 @@
                         <li><input type="number" id="round1Player2Score" name="round1Player2Score" placeholder="Round 1"></li>
                         <li><input type="number" id="round2Player2Score" name="round2Player2Score" placeholder="Round 2"></li>
                         <li><input type="number" id="round3Player2Score" name="round3Player2Score" placeholder="Round 3"></li>
-                        <li><label class="pudding">Pudding:</label> <br>
-                            <input type="radio" id="mostpudding" name="puddingscore" value="mostpudding">
-                            <label class="pudding">Most</label> <br>
-                            <input type="radio" id="leastpudding" name="puddingscore" value="leastpudding">
-                            <label class="pudding">Least</label>
-                        </li>
+                        <li><input type="number" id="puddingP2Score" name="puddingP2score" placeholder="Pudding"></li>
                         <li><input type="number" id="finalPlayer2Score" name="finalPlayer2Score" placeholder="Total"></li>
+                        <button>Calculate</button>
                     </ol>
                 </div>
 
@@ -71,13 +65,9 @@
                     <li><input type="number" id="round1Player3Score" name="round1Player3Score" placeholder="Round 1"></li>
                     <li><input type="number" id="round2Player3Score" name="round2Player3Score" placeholder="Round 2"></li>
                     <li><input type="number" id="round3Player3Score" name="round3Player3Score" placeholder="Round 3"></li>
-                    <li><label class="pudding">Pudding:</label> <br>
-                        <input type="radio" id="mostpudding" name="puddingscore" value="mostpudding">
-                        <label class="pudding">Most</label> <br>
-                        <input type="radio" id="leastpudding" name="puddingscore" value="leastpudding">
-                        <label class="pudding">Least</label>
-                    </li>
+                    <li><input type="number" id="puddingP3Score" name="puddingP3score" placeholder="Pudding"></li>
                     <li><input type="number" id="finalPlayer3Score" name="finalPlayer3Score" placeholder="Total"></li>
+                    <button>Calculate</button>
                 </ol>
             </div>
 
@@ -89,13 +79,9 @@
                     <li><input type="number" id="round1Player4Score" name="round1Player4Score" placeholder="Round 1"></li>
                     <li><input type="number" id="round2Player4Score" name="round2Player4Score" placeholder="Round 2"></li>
                     <li><input type="number" id="round3Player4Score" name="round3Player4Score" placeholder="Round 3"></li>
-                    <li><label class="pudding">Pudding:</label> <br>
-                        <input type="radio" id="mostpudding" name="puddingscore" value="mostpudding">
-                        <label class="pudding">Most</label> <br>
-                        <input type="radio" id="leastpudding" name="puddingscore" value="leastpudding">
-                        <label class="pudding">Least</label>
-                    </li>
+                    <li><input type="number" id="puddingP4Score" name="puddingP4score" placeholder="Pudding"></li>
                     <li><input type="number" id="finalPlayer4Score" name="finalPlayer4Score" placeholder="Total"></li>
+                    <button>Calculate</button>
                 </ol>
             </div>
 
@@ -107,17 +93,14 @@
                     <li><input type="number" id="round1Player5Score" name="round1Player5Score" placeholder="Round 1"></li>
                     <li><input type="number" id="round2Player5Score" name="round2Player5Score" placeholder="Round 2"></li>
                     <li><input type="number" id="round3Player5Score" name="round3Player5Score" placeholder="Round 3"></li>
-                    <li><label class="pudding">Pudding:</label> <br>
-                        <input type="radio" id="mostpudding" name="puddingscore" value="mostpudding">
-                        <label class="pudding">Most</label> <br>
-                        <input type="radio" id="leastpudding" name="puddingscore" value="leastpudding">
-                        <label class="pudding">Least</label>
-                    </li>
+                    <li><input type="number" id="puddingP5Score" name="puddingP5score" placeholder="Pudding"></li>
                     <li><input type="number" id="finalPlayer5Score" name="finalPlayer5Score" placeholder="Total"></li>
+                    <button>Calculate</button>
                 </ol>
             </div>
         </div>
-
+    
+        
     <footer>
         <p>Find out more information about Sushi Go! <a href=https://boardgamegeek.com/boardgame/133473/sushi-go target=_blank>here!</a></p>
     </footer>

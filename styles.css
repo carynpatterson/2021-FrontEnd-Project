@@ -8,17 +8,17 @@
  }
 
 body {
-  background-color: firebrick;  
+  background-color: #420600;  
 }  
 
 header {
   text-align: center;
   font-size: 2em;
   background: darkred;
-  border: .5rem solid black;
+  border: .25rem solid black;
   border-radius: 1.5em;
   width: 85%;
-  padding: 0;
+  padding: auto;
   margin: auto;
   color: whitesmoke;   
 }
@@ -55,44 +55,32 @@ label /*styles number of players*/{
   padding: 1em;
   font-size: 1.5rem;
   text-align: center;
-  background-color: firebrick;
+  background-color: #420600;
 }
-
-.container /*CSS style for flexbox container*/ {
-	background: black;
-  border-radius: 1.5em;
-}
-
-.player /*styles "rounds" text inside flex item*/{
-	color: whitesmoke;
-	padding: 1em;
-	margin: 1em;	
-	background: darkred;
-	border-radius: 1.5em;
-  border: black solid .25em;
-} 
 
 .pudding {
   color: pink; 
 }
 
-.score {
+.score, a {
   color: lightgreen;
 }
 
-.final, a /*CSS style for final score & link*/ {
-  color: lightgreen;
+input:focus,
+textarea:focus {
+  border-color: lightgreen;
 }
 
-footer {
+
+footer /*Sticky footer and color styles*/ {
   color: whitesmoke;
   position: relative;
   text-align: center;
-  font-size: .8rem;
+  font-size: 1rem;
   margin-top: auto;
 }
 
-a {
+a /*removes underline from link in footer*/ {
   text-decoration: none;
 }
 
@@ -102,14 +90,21 @@ a {
 
 .container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  background: #420600;
+  border-radius: 1.5em;
   
 }
 
 .player {
-flex-grow: 1;
+  flex: 0 1; /*keeps all player boxes the same size*/
+  color: whitesmoke; 
+	padding: 1.5em;
+	margin: 0;	
+	background: darkred;
+	border-radius: 1.5em;
+  border: black solid .25em;
 }
 
 /* ================================= 
