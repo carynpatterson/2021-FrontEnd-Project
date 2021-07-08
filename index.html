@@ -19,17 +19,17 @@
         <div class="choose_player_count">
         <label for="player_count">Number of players:</label>
         <select id="player_count" name="number_of_players">
-            <option value="two">Two</option>
-            <option value="three">Three</option>
-            <option value="four">Four</option>
-            <option value="five">Five</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>
         </select>  
-        <button>Submit</button>
+        <button onclick="submitplayercount()">Submit</button>
         </div>
 
         <div class="container"> 
             
-                <div class="Player-1 player">
+                <div class="Player-1 player" id="Player1">
                     <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 1">
                             
                     <ol style="list-style-type:none;">
@@ -43,7 +43,7 @@
                     </ol>
                 </div>
 
-                <div class="Player-2 player">
+                <div class="Player-2 player" id="Player2">
                     <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 2">
                     
                     <ol style="list-style-type:none;">
@@ -57,7 +57,7 @@
                     </ol>
                 </div>
 
-            <div class="Player-3 player">
+            <div class="Player-3 player" id="Player3">
                 <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 3">
                 
                 <ol style="list-style-type:none;">
@@ -71,7 +71,7 @@
                 </ol>
             </div>
 
-            <div class="Player-4 player">
+            <div class="Player-4 player" id="Player4">
                 <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 4">
                 
                 <ol style="list-style-type:none;">
@@ -85,7 +85,7 @@
                 </ol>
             </div>
 
-            <div class="Player-5 player">
+            <div class="Player-5 player" id="Player5">
                 <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 5">
         
                 <ol style="list-style-type:none;">
