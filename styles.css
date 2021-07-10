@@ -8,83 +8,129 @@
  }
 
 body {
-  background-color: #420600;  
-  
+  background-color: #41210a;  
+  color: white;
 }  
 
 header {
   text-align: center;
   font-size: 2em;
-  background: darkred;
+  background: #950303;
   border: .25rem solid black;
   border-radius: 1.5em;
   width: 85%;
   padding: auto;
   margin: auto;
-  color: whitesmoke;   
-}
-
-h1, label, .player, footer /*adds black outline to text making it more visible*/ {
-  text-shadow: -.1rem 0 black, 0 .1rem black, .1rem 0 black, 0 -.1rem black;
-}
-
-h1 {
-  text-align: center;
-}
-
-input /*styles the input fields to make them round and smaller*/ {
-  color:black;
-  background-color: whitesmoke;
-  border: solid black;
-  border-radius: 1.5em;
-  font-size: 1em;
-  /*max-height: 2.25em;
-  width: 9em;*/
-  text-align: center; 
-  
-}
-
-label /*styles number of players*/{
-  color: whitesmoke;    
+  color: white;  
 }
 
 #player_count /*styles the dropdown box*/ {
   color:black;
-  background-color: whitesmoke;
+  background-color: white;
+  border-radius: .3em;
+}
+
+#PlayerCountButton {
+  border-radius: .3em;
+  background-color: #950303;
+  color: white;
 }
 
 .choose_player_count /*styles the header "Number of Players"*/{
   padding: 1em;
   font-size: 1.5rem;
   text-align: center;
-  background-color: #420600;
+  background-color: #41210a;
 }
 
-.pudding {
-  color: pink; 
+.score {
+  color: #593f33;
+  font-size: 1.5rem;
 }
 
-.score, a {
-  color: lightgreen;
+input /*styles the input fields to make them round and smaller*/ {
+  color:black;
+  background-color: #ece3d1;
+  border: solid #593f33;
+  border-radius: 1em;
+  font-size: 1em;
+  text-align: center;   
 }
 
 input:focus,
 textarea:focus {
-  border-color: lightgreen;
+  border-color: darkred;
+  outline: none;
 }
 
+#Player1 {
+  background-color: #acd422;
+  color: #f6f8da;
+}
+
+#P1button {
+  border-radius: 1em;
+  background-color: #e08e66;
+  color: white;
+}
+
+#Player2 {
+  background-color: #8e99b7;
+  color: white;
+}
+
+#P2button {
+  border-radius: 1em;
+  background-color: #cacd4c;
+  color: white;
+}
+
+#Player3 {
+  background-color: #b089a9;
+  color: white;
+}
+
+#P3button {
+  border-radius: 1em;
+  background-color: #da620b;
+  color: white;
+}
+
+#Player4 {
+  background-color: #e8c32e;
+  color: white;
+}
+
+#P4button {
+  border-radius: 1em;
+  background-color: #9e932c;
+  color: white;
+}
+
+#Player5 {
+  background-color: #ebb4b7;
+  color: white;
+}
+
+#P5button {
+  border-radius: 1em;
+  background-color: #a42c1f;
+  color: white;
+}
 
 footer /*Sticky footer and color styles*/ {
-  color: whitesmoke;
+  color: #ece3d1;
   position: relative;
   text-align: center;
   font-size: 1rem;
   margin-top: auto;
 }
 
-a /*removes underline from link in footer*/ {
+a {
+  color: #acd422;
   text-decoration: none;
 }
+
 
 /* ================================= 
   Flexbox Styles
@@ -94,14 +140,14 @@ a /*removes underline from link in footer*/ {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  background: #420600;
+  background: #41210a;
   border-radius: 1.5em;
   
 }
 
 .player {
   flex: 0 1; /*keeps all player boxes the same size*/
-  color: whitesmoke; 
+  color: #ece3d1; 
 	padding: 1.5em;
 	margin: 0;	
 	background: darkred;
