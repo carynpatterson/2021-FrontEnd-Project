@@ -9,6 +9,12 @@ function submitplayercount() {
         document.getElementById("Player" + i ).style.display="block";
         }
       }
-
 }
 
+function calcscores() {
+    let a = +document.getElementById("round1Player1Score").value;
+    let b = +document.getElementById("round2Player1Score").value;
+    let c = +document.getElementById("round3Player1Score").value;
+    let d = +document.getElementById("puddingP1Score").value;
+    alert( a + b + c + d);
+}

@@ -16,7 +16,7 @@
         <h1>Sushi Go! Score Tracker</h1> 
     </header>
 
-        <div class="choose_player_count">
+        <div class="choose_player_count"> <!--Choose player count dropdown box and submit button-->
         <label for="player_count">Number of players:</label>
         <select id="player_count" name="number_of_players">
             <option value="2">Two</option>
@@ -30,73 +30,71 @@
         <div class="container"> <!--Start of flexbox container for player score cards-->
             
                 <div class="Player-1 player" id="Player1">
-                    <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 1">
+                    <input type=text id="player_name" name="player_name" style="resize:none;" placeholder="Player 1" wdith= 25%>
                             
                     <ol style="list-style-type:none;">
-                        <label class="score">Score:</label>
-                        <li><input type="number" id="round1Player1Score" name="round1Player1Score" placeholder="Round 1"></li>
-                        <li><input type="number" id="round2Player1Score" name="round2Player1Score" placeholder="Round 2"></li>
-                        <li><input type="number" id="round3Player1Score" name="round3Player1Score" placeholder="Round 3"></li>
-                        <li><input type="number" id="puddingP1Score" name="puddingP1score" placeholder="Pudding"></li>
-                        <li><input type="number" id="finalPlayer1Score" name="finalPlayer1Score" placeholder="Total"></li>
-                        <button>Calculate</button>
+                        <label class="score">Score Card</label>
+                        <li>Round 1: <input type="number" id="round1Player1Score" name="round1Player1Score" min="0" max="99"></li>
+                        <li>Round 2: <input type="number" id="round2Player1Score" name="round2Player1Score" min="0" max="99"></li>
+                        <li>Round 3: <input type="number" id="round3Player1Score" name="round3Player1Score" min="0" max="99"></li>
+                        <li>Pudding: <input type="number" id="puddingP1Score" name="puddingP1score" min="-6" max="6"></li>
                     </ol>
+                        <button onclick="calcscores()">Calculate!</button>
+                    
                 </div>
 
                 <div class="Player-2 player" id="Player2">
                     <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 2">
                     
                     <ol style="list-style-type:none;">
-                        <label class="score">Score:</label>
-                        <li><input type="number" id="round1Player2Score" name="round1Player2Score" placeholder="Round 1"></li>
-                        <li><input type="number" id="round2Player2Score" name="round2Player2Score" placeholder="Round 2"></li>
-                        <li><input type="number" id="round3Player2Score" name="round3Player2Score" placeholder="Round 3"></li>
-                        <li><input type="number" id="puddingP2Score" name="puddingP2score" placeholder="Pudding"></li>
-                        <li><input type="number" id="finalPlayer2Score" name="finalPlayer2Score" placeholder="Total"></li>
-                        <button>Calculate</button>
+                        <label class="score">Score Card</label>
+                        <li>Round 1: <input type="number" id="round1Player2Score" name="round1Player2Score" min="0" max="99"></li>
+                        <li>Round 2: <input type="number" id="round2Player2Score" name="round2Player2Score" min="0" max="99"></li>
+                        <li>Round 3: <input type="number" id="round3Player2Score" name="round3Player2Score" min="0" max="99"></li>
+                        <li>Pudding: <input type="number" id="puddingP1Score" name="puddingP1score" min="-6" max="6"></li>
                     </ol>
+                        <button>Calculate!</button>
                 </div>
 
             <div class="Player-3 player" id="Player3">
                 <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 3">
                 
                 <ol style="list-style-type:none;">
-                    <label class="score">Score:</label>
-                    <li><input type="number" id="round1Player3Score" name="round1Player3Score" placeholder="Round 1"></li>
-                    <li><input type="number" id="round2Player3Score" name="round2Player3Score" placeholder="Round 2"></li>
-                    <li><input type="number" id="round3Player3Score" name="round3Player3Score" placeholder="Round 3"></li>
-                    <li><input type="number" id="puddingP3Score" name="puddingP3score" placeholder="Pudding"></li>
-                    <li><input type="number" id="finalPlayer3Score" name="finalPlayer3Score" placeholder="Total"></li>
-                    <button>Calculate</button>
+                    <label class="score">Score Card</label>
+                    <li>Round 1: <input type="number" id="round1Player3Score" name="round1Player3Score" min="0" max="99"></li>
+                    <li>Round 2: <input type="number" id="round2Player3Score" name="round2Player3Score" min="0" max="99"></li>
+                    <li>Round 3: <input type="number" id="round3Player3Score" name="round3Player3Score" min="0" max="99"></li>
+                    <li>Pudding: <input type="number" id="puddingP1Score" name="puddingP1score" min="-6" max="6"></li>
                 </ol>
+                    <button>Calculate!</button>
             </div>
 
             <div class="Player-4 player" id="Player4">
                 <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 4">
                 
                 <ol style="list-style-type:none;">
-                    <label class="score">Score:</label>
-                    <li><input type="number" id="round1Player4Score" name="round1Player4Score" placeholder="Round 1"></li>
-                    <li><input type="number" id="round2Player4Score" name="round2Player4Score" placeholder="Round 2"></li>
-                    <li><input type="number" id="round3Player4Score" name="round3Player4Score" placeholder="Round 3"></li>
-                    <li><input type="number" id="puddingP4Score" name="puddingP4score" placeholder="Pudding"></li>
-                    <li><input type="number" id="finalPlayer4Score" name="finalPlayer4Score" placeholder="Total"></li>
-                    <button>Calculate</button>
-                </ol>
+                    <ol style="list-style-type:none;">
+                        <label class="score">Score Card</label>
+                        <li>Round 1: <input type="number" id="round1Player4Score" name="round1Player4Score" min="0" max="99"></li>
+                        <li>Round 2: <input type="number" id="round2Player4Score" name="round2Player4Score" min="0" max="99"></li>
+                        <li>Round 3: <input type="number" id="round3Player4Score" name="round3Player4Score" min="0" max="99"></li>
+                        <li>Pudding: <input type="number" id="puddingP1Score" name="puddingP1score" min="-6" max="6"></li>
+                    </ol>
+                        <button>Calculate!</button>
             </div>
 
             <div class="Player-5 player" id="Player5">
                 <input type=text id="player_name" name="player_name" maxlength="12" minlength="1" style="resize:none;" placeholder="Player 5">
         
                 <ol style="list-style-type:none;">
-                    <label class="score">Score:</label> 
-                    <li><input type="number" id="round1Player5Score" name="round1Player5Score" placeholder="Round 1"></li>
-                    <li><input type="number" id="round2Player5Score" name="round2Player5Score" placeholder="Round 2"></li>
-                    <li><input type="number" id="round3Player5Score" name="round3Player5Score" placeholder="Round 3"></li>
-                    <li><input type="number" id="puddingP5Score" name="puddingP5score" placeholder="Pudding"></li>
-                    <li><input type="number" id="finalPlayer5Score" name="finalPlayer5Score" placeholder="Total"></li>
-                    <button>Calculate</button>
-                </ol>
+                    <ol style="list-style-type:none;">
+                        <label class="score">Score Card</label>
+                        <li>Round 1: <input type="number" id="round1Player5Score" name="round1Player5Score" min="0" max="99"></li>
+                        <li>Round 2: <input type="number" id="round2Player5Score" name="round2Player5Score" min="0" max="99"></li>
+                        <li>Round 3: <input type="number" id="round3Player5Score" name="round3Player5Score" min="0" max="99"></li>
+                        <li>Pudding: <input type="number" id="puddingP1Score" name="puddingP1score" min="-6" max="6"></li>
+                    </ol>
+                        <button>Calculate!</button>
             </div>
         </div>
     

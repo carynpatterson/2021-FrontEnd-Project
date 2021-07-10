@@ -37,10 +37,11 @@ input /*styles the input fields to make them round and smaller*/ {
   background-color: whitesmoke;
   border: solid black;
   border-radius: 1.5em;
-  font-size: 1.25em;
-  max-height: 2.25em;
-  max-width: 9em;
-  text-align: center;  
+  font-size: 1em;
+  /*max-height: 2.25em;
+  width: 9em;*/
+  text-align: center; 
+  
 }
 
 label /*styles number of players*/{
@@ -92,7 +93,7 @@ a /*removes underline from link in footer*/ {
 .container {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
+  justify-content: center;
   background: #420600;
   border-radius: 1.5em;
   
@@ -104,9 +105,9 @@ a /*removes underline from link in footer*/ {
 	padding: 1.5em;
 	margin: 0;	
 	background: darkred;
-  
-	border-radius: 1.5em;
+  border-radius: 1.5em;
   border: black solid .25em;
+  text-align: center;
 }
 
 /* ================================= 
@@ -116,5 +117,5 @@ a /*removes underline from link in footer*/ {
 @media screen and (min-width: 769px) {
   .container {
     flex-flow: row wrap;
-  }
+    }
 }
