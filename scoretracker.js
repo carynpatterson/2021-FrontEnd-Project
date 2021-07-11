@@ -11,7 +11,7 @@ function submitplayercount() {
       }
 }
 
-function calcscores() {
+function calcP1score() {
     let a = +document.getElementById("round1Player1Score").value;
     let b = +document.getElementById("round2Player1Score").value;
     let c = +document.getElementById("round3Player1Score").value;
