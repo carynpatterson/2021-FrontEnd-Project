@@ -16,5 +16,42 @@ function calcP1score() {
     let b = +document.getElementById("round2Player1Score").value;
     let c = +document.getElementById("round3Player1Score").value;
     let d = +document.getElementById("puddingP1Score").value;
-    alert( a + b + c + d);
+    const P1score = a + b + c + d;
+    alert( P1score);
+}
+
+function calcP2score() {
+    let e = +document.getElementById("round1Player2Score").value;
+    let f = +document.getElementById("round2Player2Score").value;
+    let g = +document.getElementById("round3Player2Score").value;
+    let h = +document.getElementById("puddingP2Score").value;
+    const P2score = e + f + g + h;
+    alert( P2score);
+}
+
+function calcP3score() {
+    let j = +document.getElementById("round1Player3Score").value;
+    let k = +document.getElementById("round2Player3Score").value;
+    let l = +document.getElementById("round3Player3Score").value;
+    let m = +document.getElementById("puddingP3Score").value;
+    const P3score = j + k + l + m;
+    alert( P3score);
+}
+
+function calcP4score() {
+    let n = +document.getElementById("round1Player4Score").value;
+    let o = +document.getElementById("round2Player4Score").value;
+    let p = +document.getElementById("round3Player4Score").value;
+    let q = +document.getElementById("puddingP4Score").value;
+    const P4score = n + o + p + q;
+    alert( P4score);
+}
+
+function calcP5score() {
+    let r = +document.getElementById("round1Player5Score").value;
+    let s = +document.getElementById("round2Player5Score").value;
+    let t = +document.getElementById("round3Player5Score").value;
+    let u = +document.getElementById("puddingP5Score").value;
+    const P5score = r + s + t + u;
+    alert( P5score);
 }
