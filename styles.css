@@ -94,6 +94,12 @@ textarea:focus /*Changes text box color when selected*/ {
   margin: .1em;
 }
 
+ul {
+  list-style-type: none;
+  text-align: right;
+  margin: 0;
+}
+
 #Player1 {
   background-color: #acd422;
 }
