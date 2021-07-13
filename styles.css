@@ -4,7 +4,7 @@
 * {
   box-sizing: border-box;
   letter-spacing: .15rem; /*made font more legible*/
-  font-family: "Sigmar One", cursive;
+  font-family: 'Sigmar One', cursive;
  }
 
 body {
@@ -63,12 +63,13 @@ header {
   height: 3em;
 }
 
-.score {
+h2 {
   color: #593f33;
   font-size: 1.5em;
+  margin: 0.65em;
 }
 
-li {
+.scorelabels {
   font-size: 1.2em;
 }
 
@@ -140,9 +141,10 @@ a:hover,
   font-size: 1rem;
   color: white;
   border-radius: .3rem;
+  margin-top: 1.5em;
 }
 
-h2 {
+h3 {
   color: #41210a;
   text-align: center;
   font-size: 1.25em;
