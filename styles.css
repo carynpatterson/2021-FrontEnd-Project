@@ -20,7 +20,7 @@ header {
   background: center repeat-x; /*Centers pudding background image and repeats along horizontal axis*/
   background-size: 215px; /*Sizes pudding background image*/
   background-image: url(../caryn-patterson-front-end-project/images-sushi-go/SushiGo-Pudding.png); 
-  background-color: darkred;
+  background-color: firebrick;
   background-blend-mode: multiply;
   border: .25rem solid darkred;
   border-radius: 1.5em;
@@ -30,7 +30,8 @@ header {
 
 .choose_player_count /*styles the header with the text "Number of Players"*/{
   padding: 1em 0 .75em 0;
-  margin: 0.5em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
   font-size: 1.5em;
   text-align: center;
   background-color: #41210a;
@@ -71,6 +72,7 @@ h2 {
 
 .scorelabels {
   font-size: 1.2em;
+  margin: .1em;
 }
 
 input /*styles the input fields to make them round and smaller*/ {
@@ -90,13 +92,9 @@ textarea:focus /*Changes text box color when selected*/ {
   outline: none;
 }
 
-.scorelabels {
-  margin: .1em;
-}
-
 ul {
   list-style-type: none;
-  text-align: right;
+  text-align: center;
   margin: 0;
 }
 
