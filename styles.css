@@ -99,7 +99,7 @@ ul li /*Styles rounds/pudding list in score card*/ {
   margin: 0;
   display: flex; /*Lines up inputs*/
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #Player1 {
@@ -213,6 +213,14 @@ a {
   .topbanner {
     display: none;
   }
+}
+
+@media screen and (min-width: 501px) and (max-width: 769px) {
+  ul li {
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: stretch;
+}
 }
 
 
