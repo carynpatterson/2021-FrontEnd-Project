@@ -16,13 +16,12 @@ header {
   text-align: center;
   font-size: 4vh; /*Keeps header font size relative to viewport height*/
   color: white;
-  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   background: center repeat-x; /*Centers pudding background image and repeats along horizontal axis*/
-  background-size: 215px; /*Sizes pudding background image*/
+  background-size: 240px; /*Sizes pudding background image*/
   background-image: url(images-sushi-go/SushiGo-Pudding.png); 
-  background-color: maroon;
-  background-blend-mode: screen;
+  background-color: firebrick;
+  background-blend-mode: hard-light;
   border: .25rem solid darkred;
   border-radius: 1.5em;
   width: 100%;
@@ -65,7 +64,7 @@ header {
   height: 3em;
 }
 
-h2 {
+h2 /*Styles score card header*/{
   color: #593f33;
   font-size: 1.5em;
   margin: 0.65em;
@@ -74,6 +73,8 @@ h2 {
 .scorelabels {
   font-size: 1.2em;
   margin: .1em;
+  display: inline-block;
+  text-align: right;
 }
 
 input /*styles the input fields to make them round and smaller*/ {
@@ -83,7 +84,6 @@ input /*styles the input fields to make them round and smaller*/ {
   border-radius: .75em;
   font-size: 1rem;
   text-align: center; 
-  width: auto;  
 }
 
 input:focus,
@@ -93,12 +93,14 @@ textarea:focus /*Changes text box color when selected*/ {
   outline: none;
 }
 
-ul {
+ul li /*Styles rounds/pudding list in score card*/ {
   list-style-type: none;
   text-align: center;
   margin: 0;
+  display: flex; /*Lines up inputs*/
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
-
 
 #Player1 {
   background-color: #acd422;
@@ -147,14 +149,13 @@ a:hover,
   box-shadow: 0px 5px 40px -10px rgba(0,0,0,5);
 }
 
-.buttons {
+.buttons /*Styles all buttons except the submit button*/ {
   font-size: 1rem;
   color: white;
   border-radius: .5rem;
-  margin-top: 1.5em;
 }
 
-h3 {
+h3 /*Styles the total in the score card*/{
   color: #41210a;
   text-align: center;
   font-size: 1.25em;
@@ -205,15 +206,15 @@ a {
   Media Queries
 ==================================== */
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   .container {
     flex-flow: row wrap;
     }
   .topbanner {
     display: none;
   }
- 
 }
+
 
 @media screen and (min-width: 1024px) {
   img {
@@ -221,6 +222,9 @@ a {
   }
   #chopsticks {
     width: 5%;
+  }
+  ul li {
+    justify-content: space-between;
   }
 }
 
@@ -230,7 +234,7 @@ a {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 760px) {
   .footerimgmed {
     display: none;
   }
