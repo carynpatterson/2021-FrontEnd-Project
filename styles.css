@@ -20,9 +20,9 @@ header {
   background: center repeat-x; /*Centers pudding background image and repeats along horizontal axis*/
   background-size: 240px; /*Sizes pudding background image*/
   background-image: url(images-sushi-go/SushiGo-Pudding.png); 
-  background-color: firebrick;
+  background-color: maroon;
   background-blend-mode: hard-light;
-  border: .25rem solid darkred;
+  border: .25rem solid firebrick;
   border-radius: 1.5em;
   width: 100%;
   margin: auto; 
