@@ -20,8 +20,6 @@ function calcP1score() {
     document.querySelector("#p1total").innerHTML = P1score;
 }
 
-
-
 function calcP2score() {
     let e = +document.getElementById("round1Player2Score").value;
     let f = +document.getElementById("round2Player2Score").value;
@@ -57,3 +55,12 @@ function calcP5score() {
     const P5score = r + s + t + u;
     document.querySelector("#p5total").innerHTML = P5score;
 }
+
+function ResetScores() {
+    document.getElementById("round1Player1Score").value = "";
+    document.getElementById("round2Player1Score").value = "";
+    document.getElementById("round3Player1Score").value = "";
+    document.getElementById("puddingP1Score").value = "";
+    document.querySelector("#p1total").innerHTML = "Total";
+}
+

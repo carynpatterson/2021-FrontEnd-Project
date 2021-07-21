@@ -110,6 +110,7 @@ ul li /*Styles rounds/pudding list in score card*/ {
   background-color: #e08e66; 
 }
 
+
 #Player2 {
   background-color: #8e99b7; 
 }
@@ -163,6 +164,12 @@ h3 /*Styles the total in the score card*/{
   border-radius: .5em;
   display: inline-block;
   width: 5em; 
+}
+
+#ResetScores {
+  font-size: 1em;
+  color:#f6f6f0;
+  background-color: #999275;
 }
 
 footer /*Sticky footer and color styles*/ {

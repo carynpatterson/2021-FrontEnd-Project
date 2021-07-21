@@ -39,7 +39,8 @@
                     <input type=text class="player_name" name="player_name" size="16" placeholder="Player 1">
                  
                     <h2 class="score">Score Card</h2>  
-                    <ul> 
+                    
+                    <ul>
                         <li><label for="round1Player1Score" class="scorelabels">Round 1:</label> 
                         <input type="text" inputmode="numeric" pattern="[0-9]*" class="scoreinputs" id="round1Player1Score" name="round1Player1Score" maxlength="2" size="2.5"></li>
                         
@@ -52,9 +53,10 @@
                         <li><label for="puddingP1Score" class="scorelabels">Pudding:</label>
                         <input type="text" inputmode="numeric" pattern="[0-9]*" class="scoreinputs" id="puddingP1Score" name="puddingP1score" maxlength="2" size="2.5"></li>
                     </ul>
-                        <button class="buttons" id="P1button" onclick="calcP1score()">Calculate!</button></br> 
-                        <h3 id="p1total">Total</h3>
-
+                        <button class="buttons" id="P1button" onclick="calcP1score()">Calculate!</button></br>
+                        
+                        <h3 id="p1total">Total</h3><br>
+                        
                 </div>
 
                 <div class="Player-2 player" id="Player2">
@@ -145,6 +147,7 @@
     
         
     <footer>
+        <br><button type="reset" id="ResetScores" class="buttons" onclick="ResetScores()">Reset Scores</button>
         <div class="footerbanner">
             <img src="images-sushi-go\SushiGo-Wasabi.png" width=80px id="wasabi" class="footerimg" alt="Playing card art of a peaceful wasabi lounging on a pink plate">
             <img src="images-sushi-go\SushiGo-Dumpling.png" width=80px id="dumpling" class="footerimg" alt="Playing card art of a happy dumpling resting on a green leaf on top of a red plate">
