@@ -97,9 +97,9 @@ ul li /*Styles rounds/pudding list in score card*/ {
   list-style-type: none;
   text-align: center;
   margin: 0;
-  display: flex; /*Lines up inputs*/
+  display: flex; /*Made the list a flex item to make inputs line up*/
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-between; /*Lines up the input boxes*/
 }
 
 #Player1 {
@@ -166,7 +166,7 @@ h3 /*Styles the total in the score card*/{
   width: 5em; 
 }
 
-#ResetScores {
+#ResetScores /*Styles the button that resets the scores*/{
   font-size: 1em;
   color:#f6f6f0;
   background-color: #999275;
@@ -191,7 +191,7 @@ a {
 
 .container {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column wrap; /*Score cards in column format for small screens*/
   justify-content: center;
   background: #41210a;
   border-radius: 1.5em;
@@ -199,7 +199,7 @@ a {
 }
 
 .player {
-  flex: 0 1; /*keeps all player boxes the same size*/
+  flex: 0 1; /*keeps all score card boxes the same size*/
   padding: 1.5em;
 	margin: 0;	
 	background: darkred;
@@ -214,15 +214,16 @@ a {
 ==================================== */
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container /*Changes the score card flexbox to be in row layout instead of column for larger screens*/ {
     flex-flow: row wrap;
     }
-  .topbanner {
+  .topbanner /*Removes the sushi icons above the score cards for larger screens/row layout*/ {
     display: none;
   }
 }
 
-@media screen and (min-width: 501px) and (max-width: 767px) {
+@media screen and (min-width: 501px) and (max-width: 767px) /*Moves the inputs for rounds under their labels instead of beside them for awkward screen size, otherwise gap between labels and inputs was too large*/ 
+{
   ul li {
     flex-flow: column wrap;
     align-content: center;
@@ -233,25 +234,25 @@ a {
 
 
 @media screen and (min-width: 1024px) {
-  img {
-    width: 7%;
+  img /*all footer images show at this screen size or larger*/{
+    width: 7%; 
   }
   #chopsticks {
-    width: 5%;
+    width: 5%; 
   }
   ul li {
-    justify-content: space-between;
+    justify-content: space-between; /*keeps input boxes aligned*/
   }
 }
 
 @media screen and (max-width: 820px) {
-  .footerimgbig {
+  .footerimgbig /*removes images with this class at smaller screen size*/{
     display: none;
   }
 }
 
 @media screen and (max-width: 760px) {
-  .footerimgmed {
+  .footerimgmed /*removes images with this class at smaller screen size, footerimgbig already removed using query above*/{
     display: none;
   }
 }
