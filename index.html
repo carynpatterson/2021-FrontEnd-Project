@@ -39,44 +39,50 @@
                     <input type=text class="player_name" name="player_name" size="16" placeholder="Player 1">
                  
                     <h2 class="score">Score Card</h2>  
-                    
-                    <ul>
-                        <li><label for="round1Player1Score" class="scorelabels">Round 1:</label> 
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" class="scoreinputs" id="round1Player1Score" name="round1Player1Score" maxlength="2" size="2.5"></li>
-                        
-                        <li><label for="round2Player1Score" class="scorelabels">Round 2:</label>
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" class="scoreinputs" id="round2Player1Score" name="round2Player1Score" maxlength="2" size="2.5"></li>
-                        
-                        <li><label for="round3Player1Score" class="scorelabels">Round 3:</label>
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" class="scoreinputs" id="round3Player1Score" name="round3Player1Score" maxlength="2" size="2.5"></li>
-                        
-                        <li><label for="puddingP1Score" class="scorelabels">Pudding:</label>
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" class="scoreinputs" id="puddingP1Score" name="puddingP1score" maxlength="2" size="2.5"></li>
-                    </ul>
+                        <form id="scorecard1">
+                            <ul>
+                                <li><label for="round1Player1Score" class="scorelabels">Round 1:</label> 
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" class="scoreinputs" id="round1Player1Score" name="round1Player1Score" maxlength="2" size="2.5"></li>
+                                
+                                <li><label for="round2Player1Score" class="scorelabels">Round 2:</label>
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" class="scoreinputs" id="round2Player1Score" name="round2Player1Score" maxlength="2" size="2.5"></li>
+                                
+                                <li><label for="round3Player1Score" class="scorelabels">Round 3:</label>
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" class="scoreinputs" id="round3Player1Score" name="round3Player1Score" maxlength="2" size="2.5"></li>
+                                
+                                <li><label for="puddingP1Score" class="scorelabels">Pudding:</label>
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" class="scoreinputs" id="puddingP1Score" name="puddingP1score" maxlength="2" size="2.5"></li>
+                            </ul>
+                        </form> 
+
                         <button class="buttons" id="P1button" onclick="calcP1score()">Calculate!</button></br>
                         
                         <h3 id="p1total">Total</h3><br>
-                        
+                       
                 </div>
 
                 <div class="Player-2 player" id="Player2">
                     <input type=text class="player_name" name="player_name" size="16" placeholder="Player 2">
                     
                     <h2 class="score">Score Card</h2>
-                    <ul>
-                        <li><label for="round1Player2Score" class="scorelabels">Round 1:</label> 
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" id="round1Player2Score" name="round1Player2Score" maxlength="2" size="2.5"></li>
-                        
-                        <li><label for="round2Player2Score" class="scorelabels">Round 2:</label>
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" id="round2Player2Score" name="round2Player2Score" maxlength="2" size="2.5"></li>
-                        
-                        <li><label for="round3Player2Score" class="scorelabels">Round 3:</label>
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" id="round3Player2Score" name="round3Player2Score" maxlength="2" size="2.5"></li>
-                        
-                        <li><label for="puddingP2Score" class="scorelabels">Pudding:</label>
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" id="puddingP2Score" name="puddingP2score" maxlength="2" size="2.5"></li>
-                    </ul>
+                        <form id="scorecard2">
+                            <ul>
+                                <li><label for="round1Player2Score" class="scorelabels">Round 1:</label> 
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="round1Player2Score" name="round1Player2Score" maxlength="2" size="2.5"></li>
+                                
+                                <li><label for="round2Player2Score" class="scorelabels">Round 2:</label>
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="round2Player2Score" name="round2Player2Score" maxlength="2" size="2.5"></li>
+                                
+                                <li><label for="round3Player2Score" class="scorelabels">Round 3:</label>
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="round3Player2Score" name="round3Player2Score" maxlength="2" size="2.5"></li>
+                                
+                                <li><label for="puddingP2Score" class="scorelabels">Pudding:</label>
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="puddingP2Score" name="puddingP2score" maxlength="2" size="2.5"></li>
+                            </ul>
+                        </form>
+
                         <button class="buttons" id="P2button" onclick="calcP2score()">Calculate!</button></br>
+
                         <h3 id="p2total">Total</h3>
                 </div>
 
@@ -84,21 +90,24 @@
                 <input type=text class="player_name" name="player_name" size="16" placeholder="Player 3">
                 
                     <h2 class="score">Score Card</h2>
-                    <ul>
-                        <li><label for="round1Player3Score" class="scorelabels">Round 1:</label> 
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" id="round1Player3Score" name="round1Player3Score" maxlength="2" size="2.5"></li>
-                        
-                        <li><label for="round2Player3Score" class="scorelabels">Round 2:</label>
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" id="round2Player3Score" name="round2Player3Score" maxlength="2" size="2.5"></li>
-                        
-                        <li><label for="round3Player3Score" class="scorelabels">Round 3:</label>
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" id="round3Player3Score" name="round3Player3Score" maxlength="2" size="2.5"></li>
-                        
-                        <li><label for="puddingP3Score" class="scorelabels">Pudding:</label>
-                        <input type="text" inputmode="numeric" pattern="[0-9]*" id="puddingP3Score" name="puddingP3score" maxlength="2" size="2.5"></li>
-                    </ul>
+                        <form id="scorecard3">
+                            <ul>
+                                <li><label for="round1Player3Score" class="scorelabels">Round 1:</label> 
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="round1Player3Score" name="round1Player3Score" maxlength="2" size="2.5"></li>
+                                
+                                <li><label for="round2Player3Score" class="scorelabels">Round 2:</label>
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="round2Player3Score" name="round2Player3Score" maxlength="2" size="2.5"></li>
+                                
+                                <li><label for="round3Player3Score" class="scorelabels">Round 3:</label>
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="round3Player3Score" name="round3Player3Score" maxlength="2" size="2.5"></li>
+                                
+                                <li><label for="puddingP3Score" class="scorelabels">Pudding:</label>
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="puddingP3Score" name="puddingP3score" maxlength="2" size="2.5"></li>
+                            </ul>
+                        </form>
 
                     <button class="buttons" id="P3button" onclick="calcP3score()">Calculate!</button></br>
+
                     <h3 id="p3total">Total</h3>
             </div>
 
@@ -106,20 +115,24 @@
                 <input type=text class="player_name" name="player_name" size="16" placeholder="Player 4">
                 
                 <h2 class="score">Score Card</h2>
-                <ul>
-                    <li><label for="round1Player4Score" class="scorelabels">Round 1:</label> 
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="round1Player4Score" name="round1Player4Score" maxlength="2" size="2.5"></li>
-                    
-                    <li><label for="round2Player4Score" class="scorelabels">Round 2:</label>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="round2Player4Score" name="round2Player4Score" maxlength="2" size="2.5"></li>
-                    
-                    <li><label for="round3Player4Score" class="scorelabels">Round 3:</label>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="round3Player4Score" name="round3Player4Score" maxlength="2" size="2.5"></li>
-                    
-                    <li><label for="puddingP4Score" class="scorelabels">Pudding:</label>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="puddingP4Score" name="puddingP4score" maxlength="2" size="2.5"></li>
-                </ul>
+                    <form id="scorecard4">
+                        <ul>
+                            <li><label for="round1Player4Score" class="scorelabels">Round 1:</label> 
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" id="round1Player4Score" name="round1Player4Score" maxlength="2" size="2.5"></li>
+                            
+                            <li><label for="round2Player4Score" class="scorelabels">Round 2:</label>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" id="round2Player4Score" name="round2Player4Score" maxlength="2" size="2.5"></li>
+                            
+                            <li><label for="round3Player4Score" class="scorelabels">Round 3:</label>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" id="round3Player4Score" name="round3Player4Score" maxlength="2" size="2.5"></li>
+                            
+                            <li><label for="puddingP4Score" class="scorelabels">Pudding:</label>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" id="puddingP4Score" name="puddingP4score" maxlength="2" size="2.5"></li>
+                        </ul>
+                    </form>
+
                         <button class="buttons" id="P4button" onclick="calcP4score()">Calculate!</button></br>
+
                         <h3 id="p4total">Total</h3>
             </div>
 
@@ -127,21 +140,26 @@
                 <input type=text class="player_name" name="player_name" size="16" placeholder="Player 5">
         
                 <h2 class="score">Score Card</h2>
-                <ul>
-                    <li><label for="round1Player5Score" class="scorelabels">Round 1:</label> 
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="round1Player5Score" name="round1Player5Score" maxlength="2" size="2.5"></li>
+                    <form id="scorecard5">
+                        <ul>
+                            <li><label for="round1Player5Score" class="scorelabels">Round 1:</label> 
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" id="round1Player5Score" name="round1Player5Score" maxlength="2" size="2.5"></li>
+                            
+                            <li><label for="round2Player5Score" class="scorelabels">Round 2:</label>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" id="round2Player5Score" name="round2Player5Score" maxlength="2" size="2.5"></li>
+                            
+                            <li><label for="round3Player5Score" class="scorelabels">Round 3:</label>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" id="round3Player5Score" name="round3Player5Score" maxlength="2" size="2.5"></li>
                     
-                    <li><label for="round2Player5Score" class="scorelabels">Round 2:</label>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="round2Player5Score" name="round2Player5Score" maxlength="2" size="2.5"></li>
-                    
-                    <li><label for="round3Player5Score" class="scorelabels">Round 3:</label>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="round3Player5Score" name="round3Player5Score" maxlength="2" size="2.5"></li>
-            
-                    <li><label for="puddingP5Score" class="scorelabels">Pudding:</label>
-                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="puddingP5Score" name="puddingP5score" maxlength="2" size="2.5"></li>
-                </ul>
+                            <li><label for="puddingP5Score" class="scorelabels">Pudding:</label>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" id="puddingP5Score" name="puddingP5score" maxlength="2" size="2.5"></li>
+                        </ul>
+                    </form>
+
                         <button class="buttons" id="P5button" onclick="calcP5score()">Calculate!</button></br>
+                        
                         <h3 id="p5total">Total</h3>
+
             </div>
         </div>
     

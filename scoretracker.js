@@ -57,10 +57,15 @@ function calcP5score() {
 }
 
 function ResetScores() {
-    document.getElementById("round1Player1Score").value = "";
-    document.getElementById("round2Player1Score").value = "";
-    document.getElementById("round3Player1Score").value = "";
-    document.getElementById("puddingP1Score").value = "";
+    document.getElementById("scorecard1").reset();
     document.querySelector("#p1total").innerHTML = "Total";
+    document.getElementById("scorecard2").reset();
+    document.querySelector("#p2total").innerHTML = "Total";
+    document.getElementById("scorecard3").reset();
+    document.querySelector("#p3total").innerHTML = "Total";
+    document.getElementById("scorecard4").reset();
+    document.querySelector("#p4total").innerHTML = "Total";
+    document.getElementById("scorecard5").reset();
+    document.querySelector("#p5total").innerHTML = "Total";
 }
 
