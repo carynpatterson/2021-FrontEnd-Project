@@ -1,8 +1,8 @@
 
-function submitplayercount() {
-   
+function submitplayercount() {   
     let player_count = document.getElementById("player_count").value;
     for (let i = 1; i < 6; i++) {
+        //runs through values one through five to check for player count number and display//
         if ( i > player_count ) {
         document.getElementById("Player" + i ).style.display="none";
         } else  {
@@ -57,14 +57,9 @@ function calcP5score() {
 }
 
 function ResetScores() {
-    document.getElementById("scorecard1").reset();
-    document.querySelector("#p1total").innerHTML = "Total";
-    document.getElementById("scorecard2").reset();
-    document.querySelector("#p2total").innerHTML = "Total";
-    document.getElementById("scorecard3").reset();
-    document.querySelector("#p3total").innerHTML = "Total";
-    document.getElementById("scorecard4").reset();
-    document.querySelector("#p4total").innerHTML = "Total";
-    document.getElementById("scorecard5").reset();
-    document.querySelector("#p5total").innerHTML = "Total";
+    for (let i = 1; i < 6; i++) {
+    //runs through values one through 5 to reset each score card//
+    document.getElementById("scorecard" + i ).reset();
+    document.querySelector("#p" + i + "total").innerHTML = "Total";
+    }
 }
