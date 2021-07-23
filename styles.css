@@ -232,7 +232,6 @@ a {
   }
 }
 
-
 @media screen and (min-width: 1024px) {
   img /*all footer images show at this screen size or larger*/{
     width: 7%; 
