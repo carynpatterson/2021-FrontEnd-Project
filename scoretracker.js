@@ -2,13 +2,13 @@
 function submitplayercount() {   
     let player_count = document.getElementById("player_count").value;
     for (let i = 1; i < 6; i++) {
-        //runs through values one through five to check for player count number and display//
+        //looks at the value in the player count dropdown and displays the number of score cards that equals the value//
         if ( i > player_count ) {
         document.getElementById("Player" + i ).style.display="none";
         } else  {
         document.getElementById("Player" + i ).style.display="block";
         }
-      }
+    }
 }
 
 function calcP1score() {
@@ -58,8 +58,9 @@ function calcP5score() {
 
 function ResetScores() {
     for (let i = 1; i < 6; i++) {
-    //runs through values one through 5 to reset each score card//
+    //runs through values one through five to reset the number values in each score card//
     document.getElementById("scorecard" + i ).reset();
     document.querySelector("#p" + i + "total").innerHTML = "Total";
     }
 }
+
